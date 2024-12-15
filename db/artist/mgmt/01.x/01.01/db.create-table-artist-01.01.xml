@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.18.xsd">
+    <changeSet author="sushil.ghimire.careers@gmail.com" id="changelog-01.01-create-table-artist">
+        <createTable tableName="artist">
+            <column name="id" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="dob" type="DATETIME(6)"/>
+            <column name="gender" type="TINYINT(3)"/>
+            <column name="address" type="VARCHAR(255)"/>
+            <column name="first_release_year" type="YEAR"/>
+            <column name="no_of_albums_released" type="INT"/>
+            <column name="created_at" type="DATETIME(6)" defaultValueComputed="CURRENT_TIMESTAMP(6)"/>
+            <column name="updated_at" type="DATETIME(6)" defaultValueComputed="NULL ON UPDATE CURRENT_TIMESTAMP(6)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
