@@ -1,4 +1,4 @@
-# anydone_db
+# artist_db
 Artist database versioning with liquibase
 
 # Build Example
