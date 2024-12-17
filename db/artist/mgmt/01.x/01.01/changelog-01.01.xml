@@ -7,4 +7,5 @@
     <include file="db.create-table-user-01.01.xml" relativeToChangelogFile="true"/>
     <include file="db.create-table-artist-01.01.xml" relativeToChangelogFile="true"/>
     <include file="db.create-table-music-01.01.xml" relativeToChangelogFile="true"/>
+    <include file="db.add-column-role_table-user-01.01.xml" relativeToChangelogFile="true"/>
 </databaseChangeLog>
