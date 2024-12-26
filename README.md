@@ -11,7 +11,7 @@ local server
 
 ## Migrate database
 ```sh
-./migrate-single-db.sh db_name
+bash ./migrate-single-db.sh db_name
 
 ```
 host: localhost
